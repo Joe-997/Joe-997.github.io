@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Zhong Zhuang -- Homepage.</title>
+  <meta name="title" content="Zhong Zhuang - personal website.">
+  <meta name="description" content="This is a personal portfolio made by Zhong Zhuang">
+
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/font/font.css">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.png">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-2.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+
+  <div class="preloader" data-preloader>
+    <span class="line"></span>
+  </div>
+
+
+
+  <header class="header" data-header>
+    <div class="container">
+      <h3 class="logo">
+        庄<br>
+        Personal Website
+      </h3>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Top</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>Details</a>
+          </li>
+
+          <li>
+            <a href="#project" class="navbar-link" data-nav-link>Projects</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+      <a href="#" class="btn btn:hover">
+        <span class="span">Back to Top</span>
+        <!--
+          Q: how can i change this icon?
+          A: go to https://ionicons.com/ and find the icon you want. then copy the name of the icon and paste it here.
+        -->
+        <ion-icon name="arrow-back-outline" aria-hidden="true"></ion-icon>
+      </a>
+      
+      <button class="nav-open-btn btn:hover" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <div class="hero text-center" id="home">
+        <div class="container">
+
+          <div class="banner-outline has-after">
+
+            <div class="hero-banner img-holder has-after" style="--width: 500; --height: 680;" data-tilt>
+              <img src="./assets/images/hero-banner.jpg" width="500" height="680" alt="Drew Hays" class="img-cover">
+            </div>
+            
+          </div>
+
+          <div class="hero-content">
+
+            <h2 class="h2 title">About Me.</h2>
+            <p class="hero-text">
+                
+                会津大学大学院<br>
+                コンピュータ情報システム学専攻<br>
+                富岡研究室<br>
+                姓名: 庄  衆 (しょう しゅう)<br>
+                年齢: 25歳<br>................................................
+
+              </p>
+
+            <div class="wrapper">
+              
+                
+
+              <p class="hero-text">
+
+                中国で生まれ育ちました。大学時代に尊敬する先生の影響を受け、2021年に日本に留学することを決意しました<br>
+                日本での3年間、温かい親切と手を差し伸べてくださる方々に支えられ、深い感謝の気持ちでいっぱいです。将来は、フロントエンドからバックエンドまで幅広い技術領域を身につけ、フルスタックエンジニアとして活躍することを目指しています!
+              
+              </p>
+            </div>
+
+          </div>
+
+          <img src="./assets/images/hero-shape-1.png" width="559" height="232" alt="shape" class="shape shape-1">
+
+          <img src="./assets/images/hero-shape-2.png" width="1358" height="497" alt="shape" class="shape shape-2">
+
+        </div>
+      </div>
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" aria-label="about-me" id="about">
+        <div class="container">
+
+          <div class="tab-container">
+
+            <ul class="tab-btn-list">
+
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6 active" data-tab-btn="about">学歴</button>
+              </li>
+
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6" data-tab-btn="interview">スキル</button>
+              </li>
+              
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6" data-tab-btn="awward">言語</button>
+              </li>
+              
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6" data-tab-btn="exhibition">インターン</button>
+              </li>
+              
+              <li class="tab-btn-item">
+                <button class="tab-btn title h6" data-tab-btn="skillset">趣味</button>
+              </li>
+
+            </ul>
+
+            <div class="tab-content active" data-tab-content="about">
+              <div class="grid-list">
+
+                <div class="about-content" >
+
+                  <ul class="about-list">
+
+                    <li class="about-item" style="width: 300%; margin: 0 auto;">
+
+                      
+                      <span class="h6" style="font-size: 20px;">上海電機学院大学工学部ー中国上海市ー2016.9~2020.6<br>TCC日本語学校ー日本東京ー2021.1~2022.7<br>会津大学大学院ー福島県会津若松市ー2022.10~2024.9(予定)</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="tab-content" data-tab-content="skillset">
+              <div class="grid-list">
+
+                <div class="skill-content">
+
+                  <h3 class="h4 title section-title">
+                    Let's go snowboarding together!
+                  </h3>
+
+                  <p class="section-text">
+                    美しい東北地方の雪を楽しむ。
+                  </p>
+
+                </div>
+
+                <figure class="skill-banner img-holder" style="--width: 570; --height: 420;" data-tilt>
+                  <img src="./assets/images/skill-banner.jpg" width="570" height="420" loading="lazy" alt="skill banner"
+                    class="img-cover">
+                </figure>
+
+              </div>
+            </div>
+            
+            <!--
+              Q: 下面的内容从上到下显示了四个进度条和一张图片，但是并没有居中显示，而是靠左显示。怎么解决？
+              A: 把下面的内容放到一个<div>标签里面，然后给这个<div>标签添加一个class="grid-list"，就可以了。
+            -->
+            <div class="tab-content" data-tab-content="interview">
+              <div class="grid-list">
+
+                <div class="skill-content">
+                  <ul class="skill-list">
+
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">Python</span>
+
+                        <span class="value">75%</span>
+                      </div>
+
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%"></div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">深層学習(画像処理)</span>
+
+                        <span class="value">65%</span>
+                      </div>
+
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 65%"></div>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <div class="skill-content">
+                  <ul class="skill-list">
+
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">Java</span>
+
+                        <span class="value">50%</span>
+                      </div>
+
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 50%"></div>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="skill-wrapper">
+                        <span class="span">Webアプリ開発</span>
+
+                        <span class="value">40%</span>
+                      </div>
+
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 40%"></div>
+                      </div>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+                <figure class="skill-banner img-holder" style="--width: 570; --height: 420;" data-tilt>
+                  <img src="./assets/images/skill.png" width="570" height="420" loading="lazy" alt="skill banner"
+                    class="img-cover">
+                </figure>
+
+              </div>
+            </div>
+
+            <div class="tab-content" data-tab-content="awward">
+
+              <ul class="grid-list">
+
+                <li>
+                  <div class="award-card">
+                    <figcaption>2022.7ー日本語能力試験ーN1合格</figcaption>
+                    <figure class="card-banner img-holder" style="--width: 534; --height: 383;" data-tilt>
+                      
+                      <a href="./assets/images/awward-1.jpg" target="_blank" style="width: 350px; height: 250px; display: block;">
+                        <img src="./assets/images/awward-1.jpg" width="534" height="383" loading="lazy" alt="certificate" class="img-cover">
+                      </a>
+                      
+                    </figure>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="award-card">
+                    <figcaption>2023.10ーーTOEIC  L & Rーー855点</figcaption>
+                    <figure class="card-banner img-holder" style="--width: 534; --height: 383;" data-tilt>
+                      
+                      <a href="./assets/images/awward-2.jpg" target="_blank" style="width: 350px; height: 250px; display: block;">
+                        <img src="./assets/images/awward-2.jpg" width="534" height="383" loading="lazy" alt="certificate" class="img-cover">
+                      </a>
+                      
+                    </figure>
+                  </div>
+                </li>
+
+
+              </ul>
+
+            </div>
+
+            <div class="tab-content" data-tab-content="exhibition">
+              <ul class="grid-list">
+
+                <li>
+                  <div class="exhibition-card">
+                    <figure class="skill-banner img-holder-new" style="--width: 280; --height: 180;" data-tilt>
+                      <a href="./assets/images/exhibition-1.jpg" target="_blank" style="width: 350px; height: 180px; display: block;">
+                          <img src="./assets/images/exhibition-1.jpg" width="570" height="420" loading="lazy" alt="skill banner"
+                            class="img-cover">
+                          </a>
+                    </figure>
+                  </div>
+
+                  
+
+                </li>
+                
+                <p class="section-text">
+                  (時間)会社<br>
+                  (2023.8)電子部品メーカー<br><br>
+                    (2023.8~9)通信企業
+                  </p>
+
+                  <p class="section-text">
+                    形式<br>
+                  「2Days」ワークショップ<br>対面<br><br>
+                  「二週間」インターンシップ<br>対面
+                  </p>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+        Q: How to delete the button "Hire Me Now" and keep the h2 line?
+        A
+      -->
+      <section class="section cta" aria-label="work with me">
+        <div class="container">
+
+          <h2 class="title h2 section-title text-center">
+            Projects
+          </h2>
+          <!-- 
+          <a href="#" class="btn btn:hover">
+            <span class="span">Hire Me Now</span>
+
+            <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+          </a>
+          -->
+        </div>
+      </section>
+      
+
+
+
+
+      <!-- 
+        - #PROJECTS
+      -->
+
+      <section class="section project" aria-label="my latest projects" id="project">
+
+        <ul class="project-list">
+
+          <li class="project-item">
+            <div class="project-card text-center">
+
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="./assets/images/project-1.png" width="1000" height="763" loading="lazy"
+                  alt="Project poster: Creative & experienced digital design studio" class="img-cover">
+
+                <a href="https://github.com/Joe-997/Proactive-Deepfake-Defense" target="_blank" class="btn btn:hover">
+                  <span class="span">Project Details</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+
+              <div class="card-content">
+                <p class="card-subtitle">研究, Python</p>
+
+                <h3 class="title h3">
+                  <a href="https://github.com/Joe-997/Proactive-Deepfake-Defense" target="_blank" class="card-title">積極的な偽画像防御</a>
+                </h3>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="project-item">
+            <div class="project-card text-center">
+
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="./assets/images/project-2.png" width="1000" height="763" loading="lazy"
+                  alt="Project poster: Front End Development & Maintenance" class="img-cover">
+
+                <a href="https://github.com/Joe-997/3D-Model-Viewer" target="_blank" class="btn btn:hover">
+                  <span class="span">Project Details</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+
+              <div class="card-content">
+                <p class="card-subtitle">アプリ開発, Java</p>
+
+                <h3 class="title h3">
+                  <a href="https://github.com/Joe-997/3D-Model-Viewer" target="_blank" class="card-title">3D Model Viewer</a>
+                </h3>
+              </div>
+
+            </div>
+          </li>
+
+          <li class="project-item">
+            <div class="project-card text-center">
+
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="./assets/images/project-3.png" width="1000" height="763" loading="lazy"
+                  alt="Project poster: Flutter Framework & Warframe Design" class="img-cover">
+
+                <a href="https://colab.research.google.com/drive/1esdBLsZCuuWsG6nnCa9nvwum48-fb7aV?usp=sharing" target="_blank" class="btn btn:hover">
+                  <span class="span">Project Details</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+
+              <div class="card-content">
+                <p class="card-subtitle">アプリ開発(Google Colab), Python</p>
+
+                <h3 class="title h3">
+                  <a href="https://colab.research.google.com/drive/1esdBLsZCuuWsG6nnCa9nvwum48-fb7aV?usp=sharing" target="_blank" class="card-title">字幕アシスタント</a>
+                </h3>
+              </div>
+
+            </div>
+          </li>
+
+
+        </ul>
+
+      </section>
+
+      
+
+ 
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" aria-label="contact me" id="contact">
+        <div class="container">
+
+          <h2 class="title h2 section-title">Get In Touch</h2>
+
+          <div class="contact-content">
+   
+            <ul class="contact-list">
+
+              <li class="contact-item">
+
+                <div class="item-icon">
+                  <img src="./assets/images/contact-icon-1.png" width="50" height="50" loading="lazy"
+                    alt="contact icon">
+                </div>
+
+                <div>
+                  <!--<span class="title h6">869. 368. 456. 56</span>-->
+
+                  <span class="title h6">070-8397-1209</span>
+                </div>
+
+              </li>
+
+              <li class="contact-item">
+
+                <div class="item-icon">
+                  <img src="./assets/images/contact-icon-2.png" width="50" height="50" loading="lazy"
+                    alt="contact icon">
+                </div>
+
+                <div>
+                  <address class="title h6">
+                    福島県会津若松市滝沢町3-48
+                  </address>
+                </div>
+
+              </li>
+
+              <li class="contact-item">
+
+                <div class="item-icon">
+                  <img src="./assets/images/contact-icon-3.png" width="50" height="50" loading="lazy"
+                    alt="contact icon">
+                </div>
+
+                <div>
+                  <span class="title h6">zhong.zhuang.97@gmail.com</span>
+
+
+                </div>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        Copyright & Design By Zhong Zhuang - 2023
+      </p>
+
+      <a href="#top" class="back-top-btn">
+        <span class="span">To The Top</span>
+
+        <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+      </a>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor-dot" data-cursor></div>
+  <div class="cursor-outline" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
