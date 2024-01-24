@@ -11,7 +11,7 @@
   <!-- 
     - primary meta tags
   -->
-  <title>Zhong Zhuang -- Homepage.</title>
+  <title>Zhuang Zhong-- Homepage.</title>
   <meta name="title" content="Zhong Zhuang - personal website.">
   <meta name="description" content="This is a personal portfolio made by Zhong Zhuang">
 
@@ -132,6 +132,7 @@
           </div>
 
           <div class="hero-content">
+
             <div class="flex-container">
               <h2 class="h2 title">About Me.</h2>
               <p class="hero-text">
@@ -139,21 +140,23 @@
                 会津大学大学院<br>
                 コンピュータ情報システム学専攻<br>
                 富岡研究室<br>
-                姓名: 庄  衆 (しょう しゅう)<br>
+                姓名: 庄  衆 <br>
+                フリガナ: しょう しゅう<br>
+                アルファベット: Zhuang Zhong<br>
                 年齢: 25歳<br>................................................
-              </p>
+             </p>
 
             </div>
 
             <div class="flex-container">
-              <h2 class="h2 title">Message.</h2>
-              <p class="hero-text">
+              <!--<h2 class="h2 title">Message.</h2>-->
+              <p class="hero-text2">
 
-                中国で生まれ育ちました。大学時代に尊敬する先生の影響を受け、2021年に日本に留学することを決意しました<br>
-                日本での3年間、温かい親切と手を差し伸べてくださる方々に支えられ、深い感謝の気持ちでいっぱいです。将来は日本で、フロントエンドからバックエンドまで幅広い技術領域を身につけ、フルスタックエンジニアとして活躍することを目指しています!
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国で生まれ育ちました。大学時代に尊敬する先生の影響を受け、2021年に日本に留学することを決意しました<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;日本での3年間、温かい親切と手を差し伸べてくださる方々に支えられ、深い感謝の気持ちでいっぱいです。将来は日本で、フロントエンドからバックエンドまで幅広い技術領域を身につけ、フルスタックエンジニアとして活躍することを目指しています!
               
               </p>
-                
+
             </div>
 
           </div>
@@ -171,238 +174,161 @@
       <!-- 
         - #ABOUT
       -->
-
       <section class="section about" aria-label="about-me" id="about">
-        <div class="container">
-
-          <div class="tab-container">
-
-            <ul class="tab-btn-list">
-
-              <li class="tab-btn-item">
-                <button class="tab-btn title h6 active" data-tab-btn="about">学歴</button>
-              </li>
-
-              <li class="tab-btn-item">
-                <button class="tab-btn title h6" data-tab-btn="interview">スキル</button>
-              </li>
-              
-              <li class="tab-btn-item">
-                <button class="tab-btn title h6" data-tab-btn="awward">言語</button>
-              </li>
-              
-              <li class="tab-btn-item">
-                <button class="tab-btn title h6" data-tab-btn="exhibition">インターン経験</button>
-              </li>
-              
-              <li class="tab-btn-item">
-                <button class="tab-btn title h6" data-tab-btn="skillset">趣味</button>
-              </li>
-
-            </ul>
-
-            <div class="tab-content active" data-tab-content="about">
-              <div class="grid-list">
-
-                <div class="about-content" >
-
-                  <ul class="about-list">
-
-                    <li class="about-item" style="width: 300%; margin: 0 auto;">
-
-                      
-                      <span class="h6" style="font-size: 20px;">上海電機学院大学工学部ー中国上海市ー2016.9~2020.6<br>TCC日本語学校ー日本東京ー2021.1~2022.7<br>会津大学大学院ー福島県会津若松市ー2022.10~2024.9(予定)</span>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-              </div>
+        <!-- 学历部分 -->
+        <div class="about-content">
+          <h3 class="h3 title section-title clickable-title" onclick="toggleVisibility('about-list')">学 歴</h3>
+          
+          <ul class="about-list" id="about-list" style="display: none;">
+            <div class="content-gap"></div>
+            <div class="exhibition-info">
+              <table>
+                <tr><td>年月</td><td>学歴</td></tr>
+                <tr><td>2016.9~2020.6</td><td>中国上海市ーーーー上海電機学院大学工学部</td></tr>
+                <tr><td>2021.1~2022.9</td><td>日本東京ーーーーTCC日本語学校</td></tr>
+                <tr><td>2022.10~2024.9(予定)</td><td>福島県会津若松市ーーーー会津大学大学院</td></tr>
+              </table>
             </div>
-
-            <div class="tab-content" data-tab-content="skillset">
-              <div class="grid-list">
-
-                <div class="skill-content">
-
-                  <h3 class="h4 title section-title">
-                    Let's go snowboarding together!
-                  </h3>
-
-                  <p class="section-text">
-                    美しい東北地方の雪を楽しむ。
-                  </p>
-
-                </div>
-
-                <figure class="skill-banner img-holder" style="--width: 570; --height: 420;" data-tilt>
-                  <img src="./assets/images/skill-banner.jpg" width="570" height="420" loading="lazy" alt="skill banner"
-                    class="img-cover">
-                </figure>
-
-              </div>
-            </div>
-            
-            <!--
-              Q: 下面的内容从上到下显示了四个进度条和一张图片，但是并没有居中显示，而是靠左显示。怎么解决？
-              A: 把下面的内容放到一个<div>标签里面，然后给这个<div>标签添加一个class="grid-list"，就可以了。
-            -->
-            <div class="tab-content" data-tab-content="interview">
-              <div class="grid-list">
-
-                <div class="skill-content">
-                  <ul class="skill-list">
-
-                    <li>
-                      <div class="skill-wrapper">
-                        <span class="span">Python</span>
-
-                        <span class="value">75%</span>
-                      </div>
-
-                      <div class="progress-bar">
-                        <div class="progress-fill" style="width: 75%"></div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div class="skill-wrapper">
-                        <span class="span">深層学習(画像処理)</span>
-
-                        <span class="value">65%</span>
-                      </div>
-
-                      <div class="progress-bar">
-                        <div class="progress-fill" style="width: 65%"></div>
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="skill-content">
-                  <ul class="skill-list">
-
-                    <li>
-                      <div class="skill-wrapper">
-                        <span class="span">Java</span>
-
-                        <span class="value">50%</span>
-                      </div>
-
-                      <div class="progress-bar">
-                        <div class="progress-fill" style="width: 50%"></div>
-                      </div>
-                    </li>
-
-                    <li>
-                      <div class="skill-wrapper">
-                        <span class="span">Webアプリ開発</span>
-
-                        <span class="value">40%</span>
-                      </div>
-
-                      <div class="progress-bar">
-                        <div class="progress-fill" style="width: 40%"></div>
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <figure class="skill-banner img-holder" style="--width: 570; --height: 420;" data-tilt>
-                  <img src="./assets/images/skill.png" width="570" height="420" loading="lazy" alt="skill banner"
-                    class="img-cover">
-                </figure>
-
-              </div>
-            </div>
-
-            <div class="tab-content" data-tab-content="awward">
-
-              <ul class="grid-list">
-
-                <li>
-                  <div class="award-card">
-                    <figcaption>2022.7ー日本語能力試験ーN1合格</figcaption>
-                    <figure class="card-banner img-holder" style="--width: 534; --height: 383;" data-tilt>
-                      
-                      <a href="./assets/images/awward-1.jpg" target="_blank" style="width: 350px; height: 250px; display: block;">
-                        <img src="./assets/images/awward-1.jpg" width="534" height="383" loading="lazy" alt="certificate" class="img-cover">
-                      </a>
-                      
-                    </figure>
-                  </div>
-                </li>
-
-                <li>
-                  <div class="award-card">
-                    <figcaption>2023.10ーーTOEIC  L & Rーー855点</figcaption>
-                    <figure class="card-banner img-holder" style="--width: 534; --height: 383;" data-tilt>
-                      
-                      <a href="./assets/images/awward-2.jpg" target="_blank" style="width: 350px; height: 250px; display: block;">
-                        <img src="./assets/images/awward-2.jpg" width="534" height="383" loading="lazy" alt="certificate" class="img-cover">
-                      </a>
-                      
-                    </figure>
-                  </div>
-                </li>
-
-
-              </ul>
-
-            </div>
-
-            <div class="tab-content" data-tab-content="exhibition">
-              <ul class="grid-list">
-
-                <li>
-                  <div class="exhibition-card">
-                    <figure class="skill-banner img-holder-new" style="--width: 280; --height: 180;" data-tilt>
-                      <a href="./assets/images/exhibition-1.jpg" target="_blank" style="width: 350px; height: 180px; display: block;">
-                          <img src="./assets/images/exhibition-1.jpg" width="570" height="420" loading="lazy" alt="skill banner"
-                            class="img-cover">
-                          </a>
-                    </figure>
-                  </div>
-
-                  
-
-                </li>
-                
-                <p class="section-text">
-                  (時間)会社<br>
-                  (2023.8)電子部品メーカー<br><br>
-                    (2023.8~9)通信企業
-                  </p>
-
-                  <p class="section-text">
-                    形式<br>
-                  「2Days」ワークショップ<br>対面<br><br>
-                  「二週間」インターンシップ<br>対面
-                  </p>
-
-              </ul>
-
-            </div>
-
-          </div>
+            <div class="content-gap"></div>
+          </ul>
 
         </div>
+    
+        <!-- 技能部分 -->
+        <div class="skill-content">
+          <h3 class="h3 title section-title clickable-title" onclick="toggleVisibility('skill-list')">スキル</h3>
+          
+          <ul class="skill-list" id="skill-list" style="display: none;">
+            <li>
+              <div class="skill-wrapper">
+                <span class="span">Python</span>
+
+                <span class="value">75%</span>
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%"></div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-wrapper">
+                <span class="span">深層学習(画像処理)</span>
+
+                <span class="value">65%</span>
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 65%"></div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-wrapper">
+                <span class="span">Java</span>
+
+                <span class="value">50%</span>
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 50%"></div>
+              </div>
+            </li>
+
+            <li>
+              <div class="skill-wrapper">
+                <span class="span">Web(バックエンド開発)</span>
+
+                <span class="value">50%</span>
+              </div>
+
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 50%"></div>
+              </div>
+            </li>
+
+            <div class="content-gap"></div>
+          </ul>
+          
+        </div>
+    
+        <!-- 语言能力部分 -->
+        <div class="language-content">
+          <h3 class="h3 title section-title clickable-title" onclick="toggleVisibility('language-container')">言語</h3>
+
+          <div id="language-container" style="display: none;">
+
+            <div class="award-list">
+            
+              <div class="content-gap"></div>
+
+              <figcaption>2022.7ー日本語能力試験ーN1合格</figcaption>
+              <a href="./assets/images/awward-1.jpg" target="_blank" class="button-style">ボタンをクリックして画像を表示する</a>
+
+              <div class="content-gap"></div>
+
+            </div>
+
+            <div class="award-list">
+
+              <figcaption>2023.10ーーTOEIC  L & Rーー855点</figcaption>
+              <a href="./assets/images/awward-2.jpg" target="_blank" class="button-style">ボタンをクリックして画像を表示する</a>
+            
+              <div class="content-gap"></div>
+
+            </div>
+          
+          </div>
+          
+          
+        </div>
+    
+        <!-- 实习经验部分 -->
+        <div class="internship-content">
+          <h3 class="h3 title section-title clickable-title" onclick="toggleVisibility('intern-list')">インターン経験</h3>
+          <ul class="intern-list" id="intern-list" style="display: none;">
+            <div class="content-gap"></div>
+            <div class="exhibition-info">
+              <table>
+                  <tr><td>年月</td><td>会社</td><td>項目</td><td>内容</td></tr>
+                  <tr><td>2023.8</td><td>アルプスアルパイン株式会社</td><td>「2Days」ワークショップ</td><td>デザイン思考の受講と実践</td></tr>
+                  <tr><td>2023.8~9</td><td>ソフトバンク株式会社</td><td>「二週間」インターン</td><td>実務体験(サービス企画)</td></tr>
+                  <tr><td>2023.11~現在</td><td>ダイアモンドヘッド株式会社</td><td>長期インターン</td><td>バックエンド開発</td></tr>
+              </table>
+            </div>
+            <div class="content-gap"></div>
+          </ul>
+
+        </div>
+    
+        <!-- 兴趣爱好部分 -->
+        <div class="hobby-content">
+          <h3 class="h3 title section-title clickable-title" onclick="toggleVisibility('hobby-container')">趣味</h3>
+          
+          <div id="hobby-container" style="display: none;">
+            
+            <h4 class="hobby-list">
+              Let's go snowboarding together!
+            </h4>
+
+            <p class="hobby-list">
+              美しい東北地方の雪
+            </p>
+
+            <figure class="hobby-list">
+              <img src="./assets/images/skill-banner.jpg" loading="lazy" class="hobby-img img-cover">
+            </figure>
+          
+          </div>
+          
+        </div>
+      
+
       </section>
 
 
 
-
-
-      <!-- 
-        - #CTA
-        Q: How to delete the button "Hire Me Now" and keep the h2 line?
-        A
-      -->
+      
       <section class="section cta" aria-label="work with me">
         <div class="container">
 
@@ -506,6 +432,31 @@
             </div>
           </li>
 
+          <li class="project-item">
+            <div class="project-card text-center">
+
+              <div class="card-banner img-holder has-before" style="--width: 1000; --height: 763;">
+                <img src="./assets/images/project-4.jpg" width="1000" height="763" loading="lazy"
+                  alt="Project poster: Flutter Framework & Warframe Design" class="img-cover">
+
+                <a href="https://pubs.aip.org/aip/acp/article-abstract/2909/1/070007/2924859/Empowering-society-5-0-through-AR-VR-applications?redirectedFrom=fulltext" target="_blank" class="btn btn:hover">
+                  <span class="span">Project Details</span>
+
+                  <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+
+              <div class="card-content">
+                <p class="card-subtitle">学会発表＆論文投稿</p>
+
+                <h3 class="title h3">
+                  <a href="https://pubs.aip.org/aip/acp/article-abstract/2909/1/070007/2924859/Empowering-society-5-0-through-AR-VR-applications?redirectedFrom=fulltext" target="_blank" class="card-title">Society 5.0(Smart city) and AR/VR</a>
+                </h3>
+              </div>
+
+            </div>
+          </li>
+
 
         </ul>
 
@@ -539,7 +490,7 @@
                 <div>
                   <!--<span class="title h6">869. 368. 456. 56</span>-->
 
-                  <span class="title h6">070-8397-1209</span>
+                  <span class="title h6">070-xxxx-1209</span>
                 </div>
 
               </li>
@@ -634,6 +585,29 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+
+
+  <!-- 
+    点击事件脚本
+  -->
+  <script>
+    function toggleVisibility(id) {
+      var element = document.getElementById(id);
+      if (element.style.display === "none") {
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+    }
+  </script>
+
+  
+
+
+
 </body>
 
 </html>
+
+
+
