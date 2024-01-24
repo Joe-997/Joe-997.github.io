@@ -7,6 +7,18 @@
  */
 
 
+
+body {
+  width: 80%; /* 设置网页内容宽度为 90% */
+  margin: 0 auto; /* 上下保持 0 间距，左右自动调整以居中 */
+  /* 可选：如果你想要整体内容有一些间距与页面边缘，可以设置 padding */
+  padding: 0 10px;
+}
+
+
+
+
+
  .project-list {
   display: flex;
   flex-direction: column;
@@ -18,6 +30,8 @@
     flex-direction: row;
   }
 }
+
+
 
 
 
@@ -189,7 +203,12 @@ body.nav-active { overflow: hidden; }
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 16px; }
+.container { 
+
+  padding-inline: 16px; 
+}
+
+
 
 .btn\:hover {
   position: relative;
@@ -246,6 +265,17 @@ body.nav-active { overflow: hidden; }
   background-color: var(--bg-jet);
   display: flex;
 }
+.img-holder2 {
+  width: 400px; /* 设置固定宽度 */
+  height: 300px; /* 设置固定高度 */
+  overflow: hidden;
+  background-color: var(--bg-jet); /* 可以保持原有的背景色设置 */
+  display: flex;
+  justify-content: center; /* 水平居中子元素 */
+  align-items: center; /* 垂直居中子元素 */
+}
+
+
 .img-holder-new {
   /*aspect-ratio: var(--width) / var(--height);overflow: hidden;*/
   
@@ -499,7 +529,6 @@ body.nav-active { overflow: hidden; }
 
 
 
-
 .flex-container {
   display: flex;
   justify-content: space-between;
@@ -637,7 +666,137 @@ body.nav-active { overflow: hidden; }
   #ABOUT
 \*-----------------------------------*/
 
-.tab-container { border: 1px solid var(--border-eerie-black); }
+/* 居中和尺寸样式,学历部分，公用部分 */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.about-list {
+  width: 80%;
+}
+.about-list table {
+  margin: 0 auto; /* Center the table */
+}
+
+/* 加入一些空间 */
+.content-gap {
+  height: 30px; /* 和 gap 相同的高度 */
+  width: 100%; /* 确保它占据整个容器宽度 */
+}
+
+/* 技能部分 */
+.skill-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.skill-list {
+  display: flex; /* 使用 Flexbox 布局 */
+  flex-wrap: wrap;  /*允许项目换行 */
+  justify-content: center; /* 水平居中 */
+  width: 60%;
+}
+
+.skill-list li {
+  flex: 0 0 48%; /* 每个项目占据大约一半的宽度 */
+  /* flex: 0 0 48% 解释: flex-grow: 0 (不放大), flex-shrink: 0 (不缩小), flex-basis: 48% (基础宽度) */
+}
+
+/* 语言能力部分 */
+.language-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.award-list {
+  display: flex; /* 使用 Flexbox 布局 */
+  flex-wrap: wrap;  /*允许项目换行 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  width: 100%;
+}
+.button-style {
+  display: inline-block; /* 使链接看起来像按钮 */
+  margin-left: 10px; /* 在按钮和文本之间添加间隙 */
+  padding: 5px 10px; /* 按钮内边距 */
+  background-color: #9cc7ff; /* 按钮背景色 */
+  border: 1px solid #ddd; /* 按钮边框 */
+  border-radius: 5px; /* 边框圆角 */
+  text-decoration: none; /* 去除下划线 */
+  color: black; /* 文字颜色 */
+  transition: background-color 0.3s ease; /* 背景色变化效果 */
+}
+
+.button-style:hover {
+  background-color: #e0e0e0; /* 鼠标悬停时背景色 */
+}
+
+/* 实习部分 */
+.internship-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.intern-list {
+  display: flex; /* 使用 Flexbox 布局 */
+  flex-wrap: wrap;  /*允许项目换行 */
+  justify-content: center; /* 水平居中 */
+  width: 90%;
+}
+
+/* 兴趣部分 */
+.hobby-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.hobby-list {
+  display: flex; /* 使用 Flexbox 布局 */
+  flex-wrap: wrap;  /*允许项目换行 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+}
+.hobby-img{
+  max-width: 50%;
+  height: auto; /* 保持图片的原始宽高比 */
+}
+
+
+
+
+/* 可点击标题的样式 */
+.clickable-title {
+  width: 90%;
+  cursor: pointer; /* 改变光标形状为手形 */
+  background-color: #3a3a3a; /* 轻微的背景色 */
+  border: 1px solid #6b6b6b; /* 简单的边框 */
+  padding: 5px 10px; /* 内部空间 */
+  border-radius: 5px; /* 圆角边框 */
+  transition: background-color 0.3s ease; /* 平滑背景颜色变化 */
+}
+
+/* 鼠标悬停时的样式 */
+.clickable-title:hover {
+  background-color: #797878; /* 悬停时背景色变暗 */
+}
+
+
+
+
+
+.tab-container { 
+  border: 1px solid var(--border-eerie-black); 
+  min-height: 300px;
+
+}
+
+
 
 .tab-btn {
   width: 100%;
@@ -701,6 +860,7 @@ body.nav-active { overflow: hidden; }
 }
 
 .progress-bar {
+  width: 100%;
   background-color: var(--bg-smoky-black);
   height: 4px;
 }
@@ -1476,6 +1636,59 @@ textarea.input-field {
   .hero .banner-outline { max-width: 410px; }
 
   .hero-text { max-width: 30ch; }
+  .hero-text2 { max-width: 70ch; }
+
+  .exhibition-layout {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.exhibition-image {
+    flex-basis: 30%;
+}
+
+.exhibition-image img {
+    width: 50%;
+    height: auto;
+
+}
+
+.exhibition-info {
+    flex-basis: 90%;
+
+}
+
+.exhibition-info table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.exhibition-info td {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+
+.award-card {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
 
   
 
@@ -1523,6 +1736,11 @@ textarea.input-field {
   .hero .container { grid-template-columns: 1fr 0.85fr; }
 
 }
+
+
+
+   
+   
 
 
 
