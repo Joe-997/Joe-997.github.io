@@ -772,6 +772,7 @@ body.nav-active { overflow: hidden; }
 
 /* 可点击标题的样式 */
 .clickable-title {
+  font-size: 20px; /* 字体大小 */
   width: 90%;
   cursor: pointer; /* 改变光标形状为手形 */
   background-color: #3a3a3a; /* 轻微的背景色 */
